@@ -1,0 +1,184 @@
+* {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F0FFFF;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header .barraPrincipal,
+.voltarHome {
+    align-items: center;
+    background-color: #D2B48C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw auto 1vh;
+    width: 90vw;
+}
+
+header .barraPrincipal a,
+.voltarHome a {
+    color: #8B4513;
+    font-size: 1em;
+    padding: 20px;
+    transition: 0.1s;
+}
+
+header .barraPrincipal a:hover,
+.voltarHome a:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: #A52A2A;
+    font-size: 1em;
+}
+
+header #imagens {
+    align-items: center;
+    background-color: #D2B48C;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+header img {
+    height: 300px;
+    width: 300px;
+}
+
+header h1 {
+    color: #8B4513;
+    font-size: 50px;
+    text-align: center;
+}
+
+header h2 {
+    color: #8B4513;
+    font-size: 20px;
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+#Perfil {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#Perfil .conteudoPerfil {
+    align-items: center;
+    background-color: #D2B48C;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+#Perfil ul {
+    list-style-type: none;
+}
+
+#Perfil h1 {
+    color: #A52A2A;
+    font-size: 50px;
+    text-align: center;
+}
+
+#Perfil li {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#Perfil i {
+    color: #8B4513;
+    font-size: 20px;
+}
+
+#Perfil span {
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+}
+
+#Sobre .conteudoSobre {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+#Sobre img {
+    float: left;
+    width: 300px;
+}
+
+#Sobre .txtSobre p {
+    font-size: 20px;
+    margin-left: 30px;
+    text-indent: 50px;
+}
+
+#Sobre .txtSobre a {
+    color: #A52A2A;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#Sobre .frase {
+    align-items: center;
+    color: #8B4513;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 10vh;
+    text-align: center;
+    width: 50vw;
+}
+
+#Contato {
+    align-items: center;
+    background-color: #8B4513;
+    display: flex;
+    justify-content: center;
+}
+
+#Contato h1 {
+    color: whitesmoke;
+    margin-right: 30px;
+}
+
+#Contato i {
+    color: whitesmoke;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+#Contato a{
+    color: whitesmoke;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#Contato a:hover {
+    color: #00008B;
+}
+
+#Contato i:hover{
+    transform: scale(1.5);
+}
