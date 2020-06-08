@@ -125,41 +125,40 @@ header h2 {
 }
 /*Agora entendi os spans*/
 
-#Sobre .conteudoSobre {
+/*Especificidade desnecessária*/
+.conteudoSobre {
     align-items: center;
     display: flex;
+    flex-flow: column nowrap;
     flex: 1;
-    height: 100vh;
+    /*Se eu não tirar isso aqui vai quebrar. Dá uma conferida*/
     justify-content: center;
-    margin: 0 auto;
+    margin: 30px auto;
     width: 90vw;
 }
 
 #Sobre img {
-    float: left;
+    /*Se tá usando o flex, não é necessário o float. Ainda mais por estar dentro de uma div*/
     width: 300px;
 }
 
-#Sobre .txtSobre p {
+.txtSobre p {
     font-size: 20px;
-    margin-left: 30px;
     text-indent: 50px;
+    margin: 20px;
 }
 
-#Sobre .txtSobre a {
+.txtSobre a {
     color: #A52A2A;
     font-size: 20px;
     text-decoration: underline;
 }
 
-#Sobre .frase {
-    align-items: center;
+.frase {
+    /*Não precisa colocar flex em tudo (lembrete pra mim e pra você kkkkk).*/
     color: #8B4513;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 10vh;
+    margin: 0 auto;
     text-align: center;
-    width: 50vw;
 }
 
 #Contato {
