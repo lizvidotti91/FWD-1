@@ -10,14 +10,20 @@ body {
     background-color: #F0FFFF;
 }
 
+.escondido{
+    display: none;
+}
+
 header {
-    height: 100vh;
+    /*Pelo tamanho máximo das imagens, elas causariam o mesmo resultado aqui. Não necessitando do vh*/
     display: flex;
     flex-direction: column;
 }
+/*DRY - não iria precisar do "header" aqui já que está utilizando uma classe*/
 
-header .barraPrincipal,
+.barraPrincipal,
 .voltarHome {
+
     align-items: center;
     background-color: #D2B48C;
     border-radius: 20px;
@@ -27,7 +33,8 @@ header .barraPrincipal,
     width: 90vw;
 }
 
-header .barraPrincipal a,
+/*DRY*/
+.barraPrincipal a,
 .voltarHome a {
     color: #8B4513;
     font-size: 1em;
@@ -35,25 +42,26 @@ header .barraPrincipal a,
     transition: 0.1s;
 }
 
-header .barraPrincipal a:hover,
+/*DRY*/
+.barraPrincipal a:hover,
 .voltarHome a:hover {
     background-color: rgba(0,0,0,0.2);
     color: #A52A2A;
     font-size: 1em;
 }
 
-header #imagens {
+/*Alterei para o javascript ficar mais "natural"*/
+.imagens {
     align-items: center;
     background-color: #D2B48C;
-    border-radius: 20px;
     display: flex;
-    flex: 1;
     justify-content: space-around;
-    margin: 0 auto;
-    width: 90vw;
+    padding: 30px 0;
+    margin: 20px auto;
+    width: 100vw;
 }
-
-header img {
+/*DRY*/
+.galery {
     height: 300px;
     width: 300px;
 }
