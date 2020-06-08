@@ -80,7 +80,6 @@ header h2 {
 }
 
 #Perfil {
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -165,18 +164,23 @@ header h2 {
     align-items: center;
     background-color: #8B4513;
     display: flex;
+    flex-flow: column nowrap;
     justify-content: center;
+    padding: 10px;
 }
 
 #Contato h1 {
     color: whitesmoke;
-    margin-right: 30px;
 }
 
 #Contato i {
     color: whitesmoke;
-    padding: 30px;
+    padding: 10px;
     transition: 0.3s;
+}
+
+.social{
+    margin: 20px;
 }
 
 #Contato a{
