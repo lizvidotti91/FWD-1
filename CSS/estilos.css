@@ -1,4 +1,6 @@
 * {
+    /*Essa fonte é estilosa e tal, mas eu limitaria ela somente aos elementos nav. Ela prejudica a leitura por ser muito fina. E caso coloque ela menor, fica ainda pior pra ler*/
+    /*Acho que pelo fato de eu estar sem óculos seja um pouco mais perceptível isso, então já fica a sugestão*/
     font-family: 'Amatic SC', cursive;
     font-size: 30px;
     margin: 0;
@@ -20,10 +22,9 @@ header {
     flex-direction: column;
 }
 /*DRY - não iria precisar do "header" aqui já que está utilizando uma classe*/
-
+/*Esqueci de colocar, mas pra simplificar eu utilizaria a tag nav ao invés das classes*/
 .barraPrincipal,
 .voltarHome {
-
     align-items: center;
     background-color: #D2B48C;
     border-radius: 20px;
@@ -58,7 +59,6 @@ header {
     justify-content: space-around;
     padding: 30px 0;
     margin: 20px auto;
-    width: 100vw;
 }
 /*DRY*/
 .galery {
@@ -74,7 +74,8 @@ header h1 {
 
 header h2 {
     color: #8B4513;
-    font-size: 20px;
+    /*Pode dificultar a leitura para usuários de melhoor idade*/
+    font-size: 25px;
     /*Joguei uma margin no .galery*/
     text-align: center;
 }
@@ -114,7 +115,7 @@ header h2 {
 }
 
 #Perfil li {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #Perfil i {
@@ -142,14 +143,14 @@ header h2 {
 }
 
 .txtSobre p {
-    font-size: 20px;
+    font-size: 25px;
     text-indent: 50px;
     margin: 20px;
 }
 
 .txtSobre a {
     color: #A52A2A;
-    font-size: 20px;
+    /*não precisaria colocar font-size aqui, ele herda do elemento pai. Nesse caso <p>*/
     text-decoration: underline;
 }
 

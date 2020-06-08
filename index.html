@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial W3 School</title>
 
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=VT323&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a79202eb1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="barraPrincipal">
+        <nav class="barraPrincipal" id="Topo">
             <a href="#Perfil" class="button">Perfil</a>
             <a href="#Sobre" class="button">Sobre</a>
             <a href="#Contato" class="button">Contato</a>
@@ -30,7 +30,8 @@
 
     <section id="Perfil">
         <nav class="voltarHome">
-            <a href="index.html">Topo</a>
+            <!--Cuidado com âncoras que fazem o recarregamento da página-->
+            <a href="#Topo">Topo</a>
             <a href="#Sobre">Próximo</a>
         </nav>
         <div class="conteudoPerfil">
@@ -56,7 +57,7 @@
                     <li><i class="fas fa-globe-americas"></i>Português (nativo)</li>
                     <li><i class="fas fa-globe"></i>Inglês (intermediário)</li>
                 </ul>
-            </article class = "interesses">
+            </article class="interesses">
             <article>
                 <h1>Interesses</h1>
                 <ul>
@@ -73,9 +74,10 @@
 
     <section id="Sobre">
         <nav class="voltarHome">
-            <a href="index.html">Topo</a>
+            <a href="#Topo">Topo</a>
             <!--Link quebrado-->
-            <a href="#Galeria">Anterior</a>
+            <!--Vamos combinar que isso iria pras habilidade né não?-->
+            <a href="#Perfil">Anterior</a>
             <a href="#Contato">Contato</a>
         </nav>
         <div class="conteudoSobre">
@@ -109,7 +111,7 @@
             <a href = "https://github.com/lizvidotti91" target="blank"><i class="fab fa-github"></i></a>
             <a href = "https://www.instagram.com/365lizes/" target="blank"><i class="fab fa-instagram"></i></a>
         </div>
-        <a href="#">Voltar ao Topo</a>
+        <a href="#Topo">Voltar ao Topo</a>
     </footer>
 </body>
 </html>
