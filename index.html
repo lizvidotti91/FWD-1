@@ -5,109 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutorial W3 School</title>
 
-    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=VT323&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a79202eb1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav class="barraPrincipal">
-            <a href="#Perfil" class = "button">Perfil</a>
-            <a href="#Sobre" class = "button">Sobre</a>
-            <a href="#Contato" class = "button">Contato</a>
+        <nav class="barraPrincipal" id="Topo">
+            <a href="#Perfil" class="button">Perfil</a>
+            <a href="#Sobre" class="button">Sobre</a>
+            <a href="#Contato" class="button">Contato</a>
         </nav>
-        <h1>Olá, sou Liz Vidotti</h1>
+        <!--Pra não ficar estranha a subida. Só adicionando uma alteração nessa linha por que isso aqui era relativo ao commit sobre a parte do "Sobre".-->
+        <h1 id="Galeria">Olá, sou Liz Vidotti</h1>
         <h2>Web Developer Jr. & Illustrator</h2>
-        <div id = "imagens">
-            <img class = "galery" src = "/IMG/mandala_2.png" alt = "Mandala em caneta nanquim">
-            <img class = "galery" src = "/IMG/mandala_3.png" alt = "Mandala em caneta nanquim">
-            <img class = "galery" src = "/IMG/mandala_nanquim.png" alt = "Mandala em caneta nanquim">
-        </div>
     </header>
-
-    <section id = "Perfil">
-        <nav class = "voltarHome">
-            <a href="index.html">Voltar ao topo</a>
-            <a href = "#Sobre">Próximo</a>
+    <section class="imagens" >
+        <!--Pode ser que o caminho /<pasta> quebre em certos navegadores. Então retirando-->
+        <img class="galery" src="img/mandala_2.png" alt="Mandala em caneta nanquim">
+        <img class="galery" src="img/mandala_3.png" alt="Mandala em caneta nanquim">
+        <img class="galery" src="img/mandala_nanquim.png" alt="Mandala em caneta nanquim">
+    </section>
+    <section id="Perfil">
+        <nav class="voltarHome">
+            <!--Cuidado com âncoras que fazem o recarregamento da página-->
+            <a href="#Topo">Topo</a>
+            <a href="#Sobre">Próximo</a>
         </nav>
-        <div class = "conteudoPerfil">
-            <div class = "habilidade">
+        <div class="conteudoPerfil">
+            <article class="habilidade">
                 <h1>Habilidades</h1>
                 <ul>
-                    <span>
-                        <i class="fas fa-laptop-code"></i><li>C</li>
-                    </span>
-                    <span>
-                        <i class="fab fa-js-square"></i><li>JavaScript</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-laptop"></i></i><li>HTML</li>
-                    </span>
-                    <span>
-                        <i class="far fa-file-code"></i></i><li>CSS</li>
-                    </span>
-                    <span>
-                        <i class="far fa-file-word"></i><li>Pacote Office</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-camera-retro"></i></i><li>Adobe Photoshop</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-pencil-ruler"></i></i><li>Adobe Illustrator</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-drafting-compass"></i><li>AutoCad</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-ruler-combined"></i><li>Revit Architecture</li>
-                    </span>
+                    <!--Pra quê os spans?-->
+                    <li><i class="fas fa-laptop-code"></i>C</li>
+                    <li><i class="fab fa-js-square"></i>JavaScript</li>
+                    <li><i class="fas fa-laptop"></i></i>HTML</li>
+                    <li><i class="far fa-file-code"></i></i>CSS</li>
+                    <li><i class="far fa-file-word"></i>Pacote Office</li>
+                    <li><i class="fas fa-camera-retro"></i></i>Adobe Photoshop</li>
+                    <li><i class="fas fa-pencil-ruler"></i></i>Adobe Illustrator</li>
+                    <li><i class="fas fa-drafting-compass"></i>AutoCad</li>
+                    <li><i class="fas fa-ruler-combined"></i>Revit Architecture</li>
                 </ul>
-            </div>
-            <div class = "lingua">
+            </article>
+
+            <article class="lingua">
                 <h1>Línguas</h1>
                 <ul>
-                    <span>
-                        <i class="fas fa-globe-americas"></i><li>Português (nativo)</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-globe"></i><li>Inglês (intermediário)</li>
-                    </span>
+                    <!--Pra quê os spans?-->
+                    <li><i class="fas fa-globe-americas"></i>Português (nativo)</li>
+                    <li><i class="fas fa-globe"></i>Inglês (intermediário)</li>
                 </ul>
-            </div class = "interesses">
-            <div>
+            </article class="interesses">
+
+            <article>
                 <h1>Interesses</h1>
                 <ul>
-                    <span>
-                        <i class="fas fa-palette"></i><li>Ilustração</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-guitar"></i><li>Música</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-paint-brush"></i><li>Artesanato</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-tablet-alt"></i><li>Tecnologia</li>
-                    </span>
-                    <span>
-                        <i class="fas fa-suitcase-rolling"></i><li>Viagem</li>
-                    </span>
+                    <!--Pra quê os spans?-->
+                    <li><i class="fas fa-palette"></i>Ilustração</li>
+                    <li><i class="fas fa-guitar"></i>Música</li>
+                    <li><i class="fas fa-paint-brush"></i>Artesanato</li>
+                    <li><i class="fas fa-tablet-alt"></i>Tecnologia</li>
+                    <li><i class="fas fa-suitcase-rolling"></i>Viagem</li>
                 </ul>
-            </div>
+            </article>
+
         </div>
     </section>
 
-    <section id = "Sobre">
-        <nav class = "voltarHome">
-            <a href="index.html">Voltar ao topo</a>
-            <a href = "#Galeria">Anterior</a>
-            <a href = "#Contato">Contato</a>
+    <section id="Sobre">
+        <nav class="voltarHome">
+            <a href="#Topo">Topo</a>
+            <!--Link quebrado-->
+            <!--Vamos combinar que isso iria pras habilidade né não?-->
+            <a href="#Perfil">Anterior</a>
+            <a href="#Contato">Contato</a>
         </nav>
-        <div class = "conteudoSobre">
-            <div class = "avatar">
-              <img src = "/IMG/perfil.png">
+        <div class="conteudoSobre">
+            <div class="avatar">
+              <img src = "img/perfil.png">
             </div>
-            <div class = "txtSobre">
+            <div class="txtSobre">
               <p>
                   Sou formada em Arquitetura e Urbanismo pela Universidade Salvador, em 2014, e Especialista em Assitência Técnica para Habitação e Direito à Cidade pela FAUFBA, em 2016. Atualmente, estou cursando Técnico em Desenvolvimento de Sistemas no Senai Cimatec.
               </p>
@@ -118,22 +96,23 @@
                   Durante minha experiência no meio acadêmico, tenho como publicados o meu <a href = "https://residencia-aue.ufba.br/pt-br/elisete-cristina-vidotti-da-rocha" target="blank">projeto final de curso da Pós-Graduação</a>, e um artigo em uma revista eletrônica, fruto do trabalho final da disciplina de extensão do Mestrado Acadêmico da FAUFBA, Política, <a href = "https://lnkd.in/duNMaDD" target="blank">Democracia e Direito à Cidade</a>, onde fui aluna especial.
               </p>
             </div>
+            <p class="frase">"A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original" (Albert Einstein)</p>
         </div>
-        <div class = "frase">
-            <p>
-                "A mente que se abre a uma nova ideia jamais voltará ao seu tamanho original"(Albert Einstein)
-            </p>
-        </div>
+        <!--Realmente não vai precisar da div aqui-->
+           
     </section>
 
     <footer id = "Contato">
         <h1>Contato:</h1>
-        <a href = "mailto:liz.vidotti@gmail.com"><i class="fas fa-at"></i></a>
-        <a href = "https://www.linkedin.com/in/elisetevidotti/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href = "https://codepen.io/lizvidotti91" target="blank"><i class="fab fa-codepen"></i></a>
-        <a href = "https://github.com/lizvidotti91" target="blank"><i class="fab fa-github"></i></a>
-        <a href = "https://www.instagram.com/365lizes/" target="blank"><i class="fab fa-instagram"></i></a>
-        <a href="#">Voltar ao Topo</a>
+        <!--Pra ficar um pouco mais organizado-->
+        <div class="social">
+            <a href = "mailto:liz.vidotti@gmail.com"><i class="fas fa-at"></i></a>
+            <a href = "https://www.linkedin.com/in/elisetevidotti/" target="blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href = "https://codepen.io/lizvidotti91" target="blank"><i class="fab fa-codepen"></i></a>
+            <a href = "https://github.com/lizvidotti91" target="blank"><i class="fab fa-github"></i></a>
+            <a href = "https://www.instagram.com/365lizes/" target="blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#Topo">Voltar ao Topo</a>
     </footer>
 </body>
 </html>

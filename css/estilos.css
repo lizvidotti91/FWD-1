@@ -1,0 +1,238 @@
+* {
+    /*Essa fonte é estilosa e tal, mas eu limitaria ela somente aos elementos nav. Ela prejudica a leitura por ser muito fina. E caso coloque ela menor, fica ainda pior pra ler*/
+    /*Acho que pelo fato de eu estar sem óculos seja um pouco mais perceptível isso, então já fica a sugestão*/
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F0FFFF;
+}
+
+.escondido{
+    display: none;
+}
+
+header {
+    /*Pelo tamanho máximo das imagens, elas causariam o mesmo resultado aqui. Não necessitando do vh*/
+    display: flex;
+    flex-direction: column;
+}
+/*DRY - não iria precisar do "header" aqui já que está utilizando uma classe*/
+/*Esqueci de colocar, mas pra simplificar eu utilizaria a tag nav ao invés das classes*/
+.barraPrincipal,
+.voltarHome {
+    align-items: center;
+    background-color: #D2B48C;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 2vw auto 1vh;
+    width: 90vw;
+}
+
+/*DRY*/
+.barraPrincipal a,
+.voltarHome a {
+    color: #8B4513;
+    font-size: 1em;
+    padding: 20px;
+    transition: 0.1s;
+}
+
+/*DRY*/
+.barraPrincipal a:hover,
+.voltarHome a:hover {
+    background-color: rgba(0,0,0,0.2);
+    color: #A52A2A;
+    font-size: 1em;
+}
+
+/*Alterei para o javascript ficar mais "natural"*/
+.imagens:before{
+    content: "<";
+    left: 1px;
+}
+
+.imagens:after{
+    content: ">";
+    right: 1px;
+}
+
+.imagens:after, .imagens:before{
+    font-size: 80px;
+    font-weight: bolder;
+    color: #8B4513;
+    position: absolute;
+}
+
+.imagens {
+    align-items: center;
+    background-color: #D2B48C;
+    display: flex;
+    margin: 20px auto;
+    overflow-x: auto;
+    width: 300px;
+}
+/*DRY*/
+.galery {
+    height: 300px;
+    width: 300px;
+}
+
+header h1 {
+    color: #8B4513;
+    font-size: 50px;
+    text-align: center;
+}
+
+header h2 {
+    color: #8B4513;
+    /*Pode dificultar a leitura para usuários de melhoor idade*/
+    font-size: 25px;
+    /*Joguei uma margin no .galery*/
+    text-align: center;
+}
+
+#Perfil {
+    display: flex;
+    flex-direction: column;
+}
+/*DRY - especificidade desnecessária*/
+.conteudoPerfil {
+    flex-flow: column wrap;
+    background-color: #D2B48C;
+    border-radius: 20px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90vw;
+    padding: 20px 10px;
+}
+
+.conteudoPerfil article{
+    margin-left: 20px;
+}
+
+#Perfil ul {
+    list-style-type: none;
+}
+
+#Perfil li:first-child{
+    margin-top: 10px;
+}
+
+#Perfil h1 {
+    color: #A52A2A;
+    font-size: 50px;
+}
+
+#Perfil li {
+    font-size: 25px;
+}
+
+#Perfil i {
+    color: #8B4513;
+    font-size: 20px;
+    margin: 0 10px;
+}
+/*Agora entendi os spans*/
+
+/*Especificidade desnecessária*/
+.conteudoSobre {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1;
+    /*Se eu não tirar isso aqui vai quebrar. Dá uma conferida*/
+    justify-content: center;
+    margin: 30px auto;
+    width: 90vw;
+}
+
+#Sobre img {
+    /*Se tá usando o flex, não é necessário o float. Ainda mais por estar dentro de uma div*/
+    width: 300px;
+}
+
+.txtSobre p {
+    font-size: 25px;
+    text-indent: 50px;
+    margin: 20px;
+}
+
+.txtSobre a {
+    color: #A52A2A;
+    /*não precisaria colocar font-size aqui, ele herda do elemento pai. Nesse caso <p>*/
+    text-decoration: underline;
+}
+
+.frase {
+    /*Não precisa colocar flex em tudo (lembrete pra mim e pra você kkkkk).*/
+    color: #8B4513;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#Contato {
+    align-items: center;
+    background-color: #8B4513;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+#Contato h1 {
+    color: whitesmoke;
+}
+
+#Contato i {
+    color: whitesmoke;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.social{
+    margin: 20px;
+}
+
+#Contato a{
+    color: whitesmoke;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+#Contato a:hover {
+    color: #00008B;
+}
+
+#Contato i:hover{
+    transform: scale(1.5);
+}
+
+/*O arquivo começou a ficar muito grande, é bom dividir*/
+@media screen and (min-width: 1024px){
+    .imagens{
+        width: 95vw;
+        border-radius: 20px;
+        justify-content: space-around;
+    }
+    
+    .imagens:after, .imagens:before{
+        display: none;
+    }
+
+    .conteudoPerfil {
+       flex-direction: row;
+        text-align: center;
+    }
+    .conteudoPerfil article{
+        width: 30%;
+    }
+
+}
