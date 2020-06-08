@@ -52,13 +52,30 @@ header {
 }
 
 /*Alterei para o javascript ficar mais "natural"*/
+.imagens:before{
+    content: "<";
+    left: 1px;
+}
+
+.imagens:after{
+    content: ">";
+    right: 1px;
+}
+
+.imagens:after, .imagens:before{
+    font-size: 80px;
+    font-weight: bolder;
+    color: #8B4513;
+    position: absolute;
+}
+
 .imagens {
     align-items: center;
     background-color: #D2B48C;
     display: flex;
-    justify-content: space-around;
-    padding: 30px 0;
     margin: 20px auto;
+    overflow-x: auto;
+    width: 300px;
 }
 /*DRY*/
 .galery {
@@ -196,4 +213,26 @@ header h2 {
 
 #Contato i:hover{
     transform: scale(1.5);
+}
+
+/*O arquivo começou a ficar muito grande, é bom dividir*/
+@media screen and (min-width: 1024px){
+    .imagens{
+        width: 95vw;
+        border-radius: 20px;
+        justify-content: space-around;
+    }
+    
+    .imagens:after, .imagens:before{
+        display: none;
+    }
+
+    .conteudoPerfil {
+       flex-direction: row;
+        text-align: center;
+    }
+    .conteudoPerfil article{
+        width: 30%;
+    }
+
 }
