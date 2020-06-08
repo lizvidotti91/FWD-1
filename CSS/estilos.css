@@ -75,7 +75,7 @@ header h1 {
 header h2 {
     color: #8B4513;
     font-size: 20px;
-    margin-bottom: 2vh;
+    /*Joguei uma margin no .galery*/
     text-align: center;
 }
 
@@ -84,43 +84,46 @@ header h2 {
     display: flex;
     flex-direction: column;
 }
-
-#Perfil .conteudoPerfil {
-    align-items: center;
+/*DRY - especificidade desnecessária*/
+.conteudoPerfil {
+    flex-flow: column wrap;
     background-color: #D2B48C;
     border-radius: 20px;
     display: flex;
     flex: 1;
     justify-content: space-around;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 90vw;
+    padding: 20px 10px;
+}
+
+.conteudoPerfil article{
+    margin-left: 20px;
 }
 
 #Perfil ul {
     list-style-type: none;
 }
 
+#Perfil li:first-child{
+    margin-top: 10px;
+}
+
 #Perfil h1 {
     color: #A52A2A;
     font-size: 50px;
-    text-align: center;
 }
 
 #Perfil li {
     font-size: 20px;
-    margin-left: 10px;
 }
 
 #Perfil i {
     color: #8B4513;
     font-size: 20px;
+    margin: 0 10px;
 }
-
-#Perfil span {
-    align-items: center;
-    display: flex;
-    margin-top: 10px;
-}
+/*Agora entendi os spans*/
 
 #Sobre .conteudoSobre {
     align-items: center;
